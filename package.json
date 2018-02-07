@@ -1,0 +1,22 @@
+{
+  "name": "kapuwrapper",
+  "version": "1.0.0",
+  "description": "A lightweight API wrapper written in NodeJS for interacting with Kapucoin API.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "blockchain",
+    "kapu",
+    "crypto",
+    "cryptocurrency",
+    "api",
+    "wrapper"
+  ],
+  "author": "Jolan Beer - Highjhacker",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.17.1"
+  }
+}
