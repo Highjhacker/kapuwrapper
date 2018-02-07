@@ -17,7 +17,21 @@ Kapu API Wrapper in NodeJS.
 ### Account
 
 ```js
+var Account = require('./lib/account');
 
+var account = new Account();
+
+account.getBalance("KGFqoZRTGTxKt1g4f9Q8Rh25NG8rhJ94r2");
+
+// Or
+
+account.getBalance("KGFqoZRTGTxKt1g4f9Q8Rh25NG8rhJ94r2", function(result) {
+    console.log(result);
+});
+
+>>> { success: true,
+      balance: '23489480000013',
+      unconfirmedBalance: '23489480000013' }
 ```
 
 ### Block
@@ -35,8 +49,7 @@ block.getBlock("7359406859723672636", function(result) {
    console.log(result);
 });
 
->>
-{ success: true,
+>>> { success: true,
      block:
       { id: '7359406859723672636',
         version: 0,
@@ -53,7 +66,9 @@ block.getBlock("7359406859723672636", function(result) {
         generatorId: 'KEGbq5GYJPiWaq5KP4bP5ucZLmMGgWptpB',
         blockSignature: '3045022100f6e6a564812c2b7510887d50f6a41aea7e1a0ab71aa1ab101779774ab24d12f90220796dbbddb2d1c14083d56fbc85133ef23153b3d465ecd4e62542da6e55c93e64',
         confirmations: 3736,
-        totalForged: '210000000' } }
+        totalForged: '210000000'
+      }
+   }
 ```
 
 ### Delegate
