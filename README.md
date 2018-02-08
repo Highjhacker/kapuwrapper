@@ -137,13 +137,29 @@ multisig.getAccounts("02cf4cd8d6047c8081a18911881923d2bbba1db743930e858588a15670
 });
 
 >>>
-
 ```
 
 ### Peer
 
 ```js
+var Peer = require('./lib/peer');
 
+var peer = new Peer();
+
+peer.getPeer("51.15.201.56", "4600", function (response) {
+    console.log(response);
+});
+
+>>> { success: true,
+      peer:
+       { ip: '51.15.201.56',
+         port: 4600,
+         version: '0.3.0',
+         errors: 0,
+         os: 'linux4.4.87-mainline-rev1',
+         height: 1545921,
+         status: 'OK',
+         delay: 37 } }
 ```
 
 ### Signature
