@@ -41,12 +41,8 @@ var Block = require('./lib/block');
 
 var block = new Block("dev");
 
-block.getBlock("7359406859723672636");
-
-// Or
-
-block.getBlock("7359406859723672636", function(result) {
-   console.log(result);
+block.getBlock("12910338651664878115", function (resp) {
+    console.log(resp);
 });
 
 >>> { success: true,
