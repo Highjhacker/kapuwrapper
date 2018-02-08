@@ -129,6 +129,14 @@ loader.autoConfigure(function(resp) {
 ### MultiSignature
 
 ```js
+var MultiSignature = require('./lib/multisignature');
+var multisig = new MultiSignature();
+
+multisig.getAccounts("02cf4cd8d6047c8081a18911881923d2bbba1db743930e858588a15670090b1a53", function (resp) {
+    console.log(resp);
+});
+
+>>>
 
 ```
 
