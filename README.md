@@ -165,7 +165,13 @@ peer.getPeer("51.15.201.56", "4600", function (response) {
 ### Signature
 
 ```js
+var Signature = require('./lib/signature');
+var signature = new Signature();
+signature.getSignatureFee(function (response) {
+    console.log(response);
+});
 
+>>> { success: true, fee: 500000000 }
 ```
 
 ### Transaction
