@@ -70,10 +70,12 @@ var Delegate = require('./lib/delegate');
 
 var delegate = new Delegate();
 
-delegate.getDelegate("02f6616a85a2ff1ce03aeebaffa464a7b7c67204ebd6f549168c5d3af290f4c821");
+// By publicKey
+delegate.getDelegate("02f6616a85a2ff1ce03aeebaffa464a7b7c67204ebd6f549168c5d3af290f4c821", function(result) {
+    console.log(result);
+});
+
 // Or by name
-delegate.getDelegate("thefoundry")
-// Or
 delegate.getDelegate("thefoundry", function(result) {
     console.log(result);
 });
@@ -89,6 +91,20 @@ delegate.getDelegate("thefoundry", function(result) {
          rate: 51,
          approval: 0.4,
          productivity: 98.95 } }
+
+// Searching for a delegate
+del.searchDelegates({"q": "dr", "limit": 1}, function (resp) {
+    console.log(resp);
+});
+
+>>> { success: true,
+      delegates:
+       [ { username: 'djandre',
+           address: 'KUQc9hNoG4o81t1gwkYTapPqJrxp8Zxf9Y',
+           publicKey: '02cf4cd8d6047c8081a18911881923d2bbba1db743930e858588a15670090b1a53',
+           vote: '88672392071858',
+           producedblocks: 30260,
+           missedblocks: 59 } ] }
 ```
 
 ### Loader
