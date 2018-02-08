@@ -21,12 +21,8 @@ var Account = require('./lib/account');
 
 var account = new Account();
 
-account.getBalance("KGFqoZRTGTxKt1g4f9Q8Rh25NG8rhJ94r2");
-
-// Or
-
-account.getBalance("KGFqoZRTGTxKt1g4f9Q8Rh25NG8rhJ94r2", function(result) {
-    console.log(result);
+account.getBalance("KSdLN3truDB6TXM2roW9XBJyc3TfNfYLFA", function (response) {
+    console.log(response);
 });
 
 >>> { success: true,
