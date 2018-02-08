@@ -110,7 +110,20 @@ del.searchDelegates({"q": "dr", "limit": 1}, function (resp) {
 ### Loader
 
 ```js
+var Loader = require('./lib/loader');
+var loader = new Loader();
 
+loader.autoConfigure(function(resp) {
+    console.log(resp);
+});
+
+>>> { success: true,
+      network:
+       { nethash: '313ea34c8eb705f79e7bc298b788417ff3f7116c9596f5c9875e769ee2f4ede1',
+         token: 'KAPU',
+         symbol: 'ʞ',
+         explorer: 'http://explorer.kapu.one',
+         version: 45 } }
 ```
 
 ### MultiSignature
