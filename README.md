@@ -74,7 +74,29 @@ block.getBlock("7359406859723672636", function(result) {
 ### Delegate
 
 ```js
+var Delegate = require('./lib/delegate');
 
+var delegate = new Delegate();
+
+delegate.getDelegate("02f6616a85a2ff1ce03aeebaffa464a7b7c67204ebd6f549168c5d3af290f4c821");
+// Or by name
+delegate.getDelegate("thefoundry")
+// Or
+delegate.getDelegate("thefoundry", function(result) {
+    console.log(result);
+});
+
+>>> { success: true,
+      delegate:
+       { username: 'thefoundry',
+         address: 'KDDZBdEBiV1FJ7eg4kdjtjkvMiUWo5zmMA',
+         publicKey: '02f6616a85a2ff1ce03aeebaffa464a7b7c67204ebd6f549168c5d3af290f4c821',
+         vote: '46661571435853',
+         producedblocks: 1785,
+         missedblocks: 19,
+         rate: 51,
+         approval: 0.4,
+         productivity: 98.95 } }
 ```
 
 ### Loader
