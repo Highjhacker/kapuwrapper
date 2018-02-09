@@ -111,6 +111,7 @@ del.searchDelegates({"q": "dr", "limit": 1}, function (resp) {
 
 ```js
 var Loader = require('./lib/loader');
+
 var loader = new Loader();
 
 loader.autoConfigure(function(resp) {
@@ -130,6 +131,7 @@ loader.autoConfigure(function(resp) {
 
 ```js
 var MultiSignature = require('./lib/multisignature');
+
 var multisig = new MultiSignature();
 
 multisig.getAccounts("02cf4cd8d6047c8081a18911881923d2bbba1db743930e858588a15670090b1a53", function (resp) {
@@ -166,7 +168,9 @@ peer.getPeer("51.15.201.56", "4600", function (response) {
 
 ```js
 var Signature = require('./lib/signature');
+
 var signature = new Signature();
+
 signature.getSignatureFee(function (response) {
     console.log(response);
 });
@@ -177,7 +181,29 @@ signature.getSignatureFee(function (response) {
 ### Transaction
 
 ```js
+var Transaction = require('./lib/transaction');
 
+var transaction = new Transaction();
+
+transaction.getTransaction("d89889337eb760d8ca2d4c5a2c4a8e64765896ce9f2f5abbfc603a721a4ae2dd", function (response) {
+    console.log(response);
+});
+
+>>> { success: true,
+      transaction:
+       { id: 'd89889337eb760d8ca2d4c5a2c4a8e64765896ce9f2f5abbfc603a721a4ae2dd',
+         blockid: '14778506381932162769',
+         height: 1543843,
+         type: 0,
+         timestamp: 28007843,
+         amount: 19734606764,
+         fee: 10000000,
+         senderId: 'KSUpE6nkLEj8snVGcUREb6AhHty7jzwTHq',
+         recipientId: 'KSdLN3truDB6TXM2roW9XBJyc3TfNfYLFA',
+         senderPublicKey: '024282d508db4e3ef63707521bffc16ccb763ae8404543c1625a78801b41b964ce',
+         signature: '3045022100982fe5a122553d80ba45d6b200a0d0fcb1889ed03f90d48dafd226f4d2fb27db022079c1169017d8fb2cb042341367e5151b0311264d651d3772af2fb47d2e574639',
+         asset: {},
+         confirmations: 3169 } }
 ```
 
 ### Transport
