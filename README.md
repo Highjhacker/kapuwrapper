@@ -209,10 +209,40 @@ transaction.getTransaction("d89889337eb760d8ca2d4c5a2c4a8e64765896ce9f2f5abbfc60
 ### Transport
 
 ```js
+var Transport = require('./lib/transport');
 
+var transport = new Transport();
+
+transport.getHeight(function (response) {
+    console.log(response);
+});
+
+>>> { success: true,
+      height: 1547506,
+      header:
+       { id: '15708167116996036265',
+         height: 1547506,
+         version: 0,
+         totalAmount: 0,
+         totalFee: 0,
+         reward: 200000000,
+         payloadHash: 'e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855',
+         payloadLength: 0,
+         timestamp: 28037160,
+         numberOfTransactions: 0,
+         previousBlock: '13300191520519744676',
+         generatorPublicKey: '02e4e24ea72fade8328c67fa080ef5871509e6508ab24ed91877e6d0b68fa02616',
+         blockSignature: '30440220282b15f0e0893c7986a91107cf633866de9c14f53cdc118d3c3f3b4d20937e8702204d845e462e2accad871d6f97acfe5b933c2fd81dcc0e560ad94ed442eb63fa31' } }
 ```
 
 ## TODOS
+- [ ] Package it for NPM.
+- [ ] Write tests.
+- [ ] Travis.
+- [ ] Implement network switch for later.
+- [ ] Better documentation.
+- [ ] Check the code, and again.
+- [ ] Implement the creation of a new tx.
 
 ## Authors
 
