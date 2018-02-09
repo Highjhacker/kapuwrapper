@@ -4,7 +4,11 @@
   "description": "A lightweight API wrapper written in NodeJS for interacting with Kapucoin API.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "./node_modules/mocha/bin/mocha"
+  },
+  "directories": {
+    "lib": "./lib",
+    "test": "./test"
   },
   "keywords": [
     "blockchain",
@@ -17,6 +21,10 @@
   "author": "Jolan Beer - Highjhacker",
   "license": "MIT",
   "dependencies": {
-    "axios": "^0.17.1"
+    "axios": "^0.17.1",
+    "mocha": "^5.0.0"
+  },
+  "devDependencies": {
+    "should": "^13.2.1"
   }
 }

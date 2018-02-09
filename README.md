@@ -243,6 +243,7 @@ transport.getHeight(function (response) {
 - [ ] Better documentation.
 - [ ] Check the code, and again.
 - [ ] Implement the creation of a new tx.
+- [ ] Migrate from NPM to Yarn ?
 
 ## Authors
 
