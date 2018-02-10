@@ -245,9 +245,13 @@ transport.getHeight(function (response) {
 - [ ] Implement the creation of a new tx.
 - [ ] Migrate from NPM to Yarn ?
 
-## Authors
+## Author
 
 - Jolan Beer - Highjhacker
+
+## Contributors
+
+- Colby Mort
 
 ## License
 
