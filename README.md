@@ -245,6 +245,8 @@ transport.getHeight(function (response) {
 - [ ] Check the code, and again.
 - [ ] Implement the creation of a new tx.
 - [ ] Migrate from NPM to Yarn ?
+- [ ] getCommonBlocks & getTransactionsFromIds doesn't works, need to rewrite a bit the functions, they are the only
+tests who fails right now.
 
 ## Author
 
