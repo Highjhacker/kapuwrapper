@@ -3,8 +3,8 @@ const Peer = require('../lib/peer');
 
 let peer = new Peer();
 
-describe("MultiSignature", function () {
-    describe('MultiSignature Functions()', function () {
+describe("Peer", function () {
+    describe('Peer Functions()', function () {
         it('should be functions', function () {
             assert.equal((typeof peer.getPeer), ('function'));
             assert.equal((typeof peer.getPeers), ('function'));

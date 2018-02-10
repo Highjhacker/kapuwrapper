@@ -5,6 +5,7 @@ Kapu API Wrapper in NodeJS.
 ## Built with
 - [NodeJS](https://nodejs.org/en/) (8.9.1)
 - [Axios](https://github.com/axios/axios)
+- [Mocha](https://mochajs.org/)
 
 ## Installation
 
