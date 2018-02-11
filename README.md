@@ -1,4 +1,5 @@
 [![Build Status](https://travis-ci.org/Highjhacker/kapuwrapper.svg?branch=master)](https://travis-ci.org/Highjhacker/kapuwrapper)
+[![HitCount](http://hits.dwyl.io/highjhacker/kapuwrapper.svg)](http://hits.dwyl.io/highjhacker/kapuwrapper)
 
 # KapuWrapper
 
@@ -240,8 +241,9 @@ transport.getHeight(function (response) {
 
 ## TODOS
 - [ ] Package it for NPM.
-- [ ] Write tests.
-- [ ] Travis.
+- [ ] Package it for Yarn ? 
+- [x] Write tests.
+- [x] Travis.
 - [ ] Implement network switch for later.
 - [ ] Better documentation.
 - [ ] Check the code, and again.
