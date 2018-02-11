@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/Highjhacker/kapuwrapper.svg?branch=master)](https://travis-ci.org/Highjhacker/kapuwrapper)
+
 # KapuWrapper
 
 Kapu API Wrapper in NodeJS.
