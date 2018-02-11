@@ -1,6 +1,6 @@
 {
   "name": "kapuwrapper",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "An async lightweight API wrapper written in NodeJS for interacting with the Kapucoin API.",
   "main": "index.js",
   "engines": {
