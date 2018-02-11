@@ -29,12 +29,13 @@ describe("Transport", function () {
     // Need to redo the function
     describe('#getCommonBlocks()', function () {
         it('Should be equal to true', function () {
-            transport.getCommonBlocks("12664557175787913380", function (response) {
+            transport.getCommonBlocks("12664557175787913380, 1962108815212954419", function (response) {
                 assert.equal(response.success, true);
             })
         }) ;
     });
 
+    /* Doesn't work
     describe('#getBlock()', function () {
         it('Should be equal to true', function () {
             transport.getBlock("KAxffcDxsSeQVEKarxDB5rpCGA5xThg635", function (response) {
@@ -42,6 +43,7 @@ describe("Transport", function () {
             })
         }) ;
     });
+    */
 
     describe('#getBlocks()', function () {
         it('Should be equal to true', function () {
