@@ -1,5 +1,7 @@
 [![Build Status](https://travis-ci.org/Highjhacker/kapuwrapper.svg?branch=master)](https://travis-ci.org/Highjhacker/kapuwrapper)
 [![HitCount](http://hits.dwyl.io/highjhacker/kapuwrapper.svg)](http://hits.dwyl.io/highjhacker/kapuwrapper)
+
+
 [![https://nodei.co/npm/kapuwrapper.png?downloads=true&downloadRank=true&stars=true](https://nodei.co/npm/kapuwrapper.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/kapuwrapper)
 
 # KapuWrapper
