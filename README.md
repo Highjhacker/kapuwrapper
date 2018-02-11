@@ -241,7 +241,7 @@ transport.getHeight(function (response) {
 
 ## TODOS
 - [ ] Package it for NPM.
-- [ ] Package it for Yarn ? 
+- [ ] Package it for Yarn ?
 - [x] Write tests.
 - [x] Travis.
 - [ ] Implement network switch for later.

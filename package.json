@@ -1,8 +1,11 @@
 {
   "name": "kapuwrapper",
-  "version": "1.0.0",
-  "description": "A lightweight API wrapper written in NodeJS for interacting with Kapucoin API.",
+  "version": "0.1.0",
+  "description": "An async lightweight API wrapper written in NodeJS for interacting with the Kapucoin API.",
   "main": "index.js",
+  "engines": {
+    "node": ">=6"
+  },
   "scripts": {
     "test": "./node_modules/mocha/bin/mocha"
   },
@@ -10,6 +13,11 @@
     "lib": "./lib",
     "test": "./test"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Highjhacker/kapuwrapper.git"
+  },
+  "homepage": "https://github.com/Highjhacker/kapuwrapper",
   "keywords": [
     "blockchain",
     "kapu",
@@ -19,12 +27,15 @@
     "wrapper"
   ],
   "author": "Jolan Beer - Highjhacker",
+  "contributors": [
+    "Colby Mort"
+  ],
   "license": "MIT",
   "dependencies": {
-    "axios": "^0.17.1",
-    "mocha": "^5.0.0"
+    "axios": "^0.17.1"
   },
   "devDependencies": {
+    "mocha": "^5.0.0",
     "should": "^13.2.1"
   }
 }
