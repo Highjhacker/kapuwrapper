@@ -21,7 +21,7 @@ Kapu API Wrapper in NodeJS.
 ### Account
 
 ```js
-var Account = require('./lib/account');
+var Account = require('kapuwrapper').Account();
 
 var account = new Account();
 
@@ -37,9 +37,9 @@ account.getBalance("KSdLN3truDB6TXM2roW9XBJyc3TfNfYLFA", function (response) {
 ### Block
 
 ```js
-var Block = require('./lib/block');
+var Block = require('kapuwrapper').Block();
 
-var block = new Block("dev");
+var block = new Block();
 
 block.getBlock("12910338651664878115", function (resp) {
     console.log(resp);
@@ -70,7 +70,7 @@ block.getBlock("12910338651664878115", function (resp) {
 ### Delegate
 
 ```js
-var Delegate = require('./lib/delegate');
+var Delegate = require('kapuwrapper').Delegates();
 
 var delegate = new Delegate();
 
@@ -114,12 +114,12 @@ del.searchDelegates({"q": "dr", "limit": 1}, function (resp) {
 ### Loader
 
 ```js
-var Loader = require('./lib/loader');
+var Loader = require('kapuwrapper').Loader;
 
 var loader = new Loader();
 
-loader.autoConfigure(function(resp) {
-    console.log(resp);
+loader.getStatus(function (err) {
+    console.log(err);
 });
 
 >>> { success: true,
@@ -134,7 +134,7 @@ loader.autoConfigure(function(resp) {
 ### MultiSignature
 
 ```js
-var MultiSignature = require('./lib/multisignature');
+var MultiSignature = require('kapuwrapper').MultiSignature();
 
 var multisig = new MultiSignature();
 
@@ -148,7 +148,7 @@ multisig.getAccounts("02cf4cd8d6047c8081a18911881923d2bbba1db743930e858588a15670
 ### Peer
 
 ```js
-var Peer = require('./lib/peer');
+var Peer = require('kapuwrapper').Peer();
 
 var peer = new Peer();
 
@@ -171,7 +171,7 @@ peer.getPeer("51.15.201.56", "4600", function (response) {
 ### Signature
 
 ```js
-var Signature = require('./lib/signature');
+var Signature = require('kapuwrapper').Signature();
 
 var signature = new Signature();
 
@@ -185,7 +185,7 @@ signature.getSignatureFee(function (response) {
 ### Transaction
 
 ```js
-var Transaction = require('./lib/transaction');
+var Transaction = require('kapuwrapper').Transaction();
 
 var transaction = new Transaction();
 
@@ -213,7 +213,7 @@ transaction.getTransaction("d89889337eb760d8ca2d4c5a2c4a8e64765896ce9f2f5abbfc60
 ### Transport
 
 ```js
-var Transport = require('./lib/transport');
+var Transport = require('kapuwrapper').Transport();
 
 var transport = new Transport();
 
