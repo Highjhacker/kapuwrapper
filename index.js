@@ -1,13 +1,22 @@
 module.exports = {
     /** @see module:account */
-    account: require("./lib/account"),
-    api: require("./lib/api"),
-    block: require("./lib/block"),
-    delegate: require("./lib/delegate"),
-    loader: require("./lib/loader"),
-    multisignature: require("./lib/multisignature"),
-    peer: require("./lib/peer"),
-    signature: require("./lib/signature"),
-    transaction: require("./lib/transaction"),
-    transport: require("./lib/transport")
+    Account: require("./lib/account"),
+    /** @see module:api */
+    API: require("./lib/api"),
+    /** @see module:block */
+    Block: require("./lib/block"),
+    /** @see module:delegate */
+    Delegate: require("./lib/delegate"),
+    /** @see module:loader */
+    Loader: require("./lib/loader"),
+    /** @see module:multisignature */
+    MultiSignature: require("./lib/multisignature"),
+    /** @see module:peer */
+    Peer: require("./lib/peer"),
+    /** @see module:signature */
+    Signature: require("./lib/signature"),
+    /** @see module:transaction */
+    Transaction: require("./lib/transaction"),
+    /** @see module:transport */
+    Transport: require("./lib/transport")
 }
