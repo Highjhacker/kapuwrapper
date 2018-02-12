@@ -76,7 +76,7 @@ block.getBlock("12910338651664878115", function (resp) {
 ### Delegate
 
 ```js
-var Delegate = require('kapuwrapper').Delegates();
+var Delegate = require('kapuwrapper').Delegate();
 
 var delegate = new Delegate();
 
@@ -120,7 +120,7 @@ del.searchDelegates({"q": "dr", "limit": 1}, function (resp) {
 ### Loader
 
 ```js
-var Loader = require('kapuwrapper').Loader;
+var Loader = require('kapuwrapper').Loader();
 
 var loader = new Loader();
 
