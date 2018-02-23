@@ -18,5 +18,7 @@ module.exports = {
     /** @see module:transaction */
     Transaction: require("./lib/transaction"),
     /** @see module:transport */
-    Transport: require("./lib/transport")
+    Transport: require("./lib/transport"),
+    /** @see module:helpers */
+    Helpers: require("./lib/helpers")
 }

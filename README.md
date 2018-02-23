@@ -24,6 +24,25 @@ $ npm install kapuwrapper
 
 ## Usage
 
+### Helpers
+
+```js
+var Helpers = require('kapuwrapper').Helpers();
+
+var helpers = new Helpers();
+
+// You can specify a specific version
+if(helpers.validateAddress("K8z91expPsR3U78g62HjDBKzwuk5BGFsn3", 0x2D)) {
+    // The address is valid, do your things
+    ...
+}
+// Or do without, the default one is 0X2D right now.
+if(helpers.validateAddress("K8z91expPsR3U78g62HjDBKzwuk5BGFsn3")) {
+    // The address is valid, do your things
+    ...
+}
+```
+
 ### Account
 
 ```js
